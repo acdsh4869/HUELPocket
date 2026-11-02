@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  明文流量白名单。
+
+  图书馆 CAS 登录后可能继续跳到超星 / 五读相关 HTTP 页面；
+  Android 默认禁止明文，WebView 会出现 ERR_CLEARTEXT_NOT_PERMITTED。
+
+  ⚠️ 不使用 usesCleartextTraffic=true 全局放开：
+  只对学校与图书馆第三方跳转链必需的域名放行，教务 / 一卡通仍然按系统策略走。
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">huel.edu.cn</domain>
+        <domain includeSubdomains="true">chaoxing.com</domain>
+        <domain includeSubdomains="true">mooc.chaoxing.com</domain>
+        <domain includeSubdomains="true">5read.com</domain>
+    </domain-config>
+</network-security-config>

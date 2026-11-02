@@ -1,0 +1,26 @@
+*.iml
+.gradle/
+.kotlin/
+/local.properties
+/keystore.properties
+/.idea/
+.DS_Store
+/build
+glass-ui/build/
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+app/build/
+app/schemas/
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# 本地私有文档（不入公开仓库）
+ISSUE-*.md
+PANGQUAI_HANDOFF.md
+icon_source.png
+docs/anim/
+docs/schedule-*.png

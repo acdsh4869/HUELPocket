@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 课程表导出：只暴露 cacheDir/exports/ 下的 ICS 文件 -->
+<paths>
+    <cache-path
+        name="course_export"
+        path="exports/" />
+</paths>

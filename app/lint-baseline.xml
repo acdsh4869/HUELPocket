@@ -1,0 +1,2264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.7.3" type="baseline" client="gradle" dependencies="false" name="AGP (8.7.3)" variant="all" version="8.7.3">
+
+    <issue
+        id="MissingPermission"
+        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`"
+        errorLine1="        runCatching { NotificationManagerCompat.from(context).notify(id, notification) }"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/focus/PomodoroNotifications.kt"
+            line="136"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="MissingPermission"
+        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`"
+        errorLine1="                            NotificationManagerCompat.from(this@PomodoroService)"
+        errorLine2="                            ^">
+        <location
+            file="src/main/java/com/huelpocket/app/focus/PomodoroService.kt"
+            line="126"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="BatteryLife"
+        message="Use of `REQUEST_IGNORE_BATTERY_OPTIMIZATIONS` violates the Play Store Content Policy regarding acceptable use cases, as described in https://developer.android.com/training/monitoring-device-state/doze-standby.html"
+        errorLine1="                                    android.provider.Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,"
+        errorLine2="                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/schedule/DisplaySettingsScreen.kt"
+            line="577"
+            column="63"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="49"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ProduceStateDoesNotAssignValue"
+        message="produceState calls should assign `value` inside the producer lambda"
+        errorLine1="    val source by produceState&lt;Bitmap?>(initialValue = null, sourceUri, useSavedSource) {"
+        errorLine2="                  ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/schedule/BackgroundCropScreen.kt"
+            line="93"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="ProduceStateDoesNotAssignValue"
+        message="produceState calls should assign `value` inside the producer lambda"
+        errorLine1="    produceState&lt;ImageBitmap?>(initialValue = null, path, version) {"
+        errorLine2="    ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/schedule/ScheduleBackground.kt"
+            line="92"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_name` is defined as `13dp` in `values/dimens.xml`"
+        errorLine1="            android:textSize=&quot;@dimen/widget_row_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_course_row.xml"
+            line="47"
+            column="13"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="41"
+            column="35"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_sub` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                android:textSize=&quot;@dimen/widget_row_sub&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_course_row.xml"
+            line="67"
+            column="17"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="42"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_sub` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                android:textSize=&quot;@dimen/widget_row_sub&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_course_row.xml"
+            line="78"
+            column="17"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="42"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_week` is defined as `10.5dp` in `values/dimens.xml`"
+        errorLine1="        android:textSize=&quot;@dimen/widget_week&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="49"
+            column="9"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="37"
+            column="31"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_side_title` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                android:textSize=&quot;@dimen/widget_side_title&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="75"
+            column="17"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="39"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_label` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_label&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="109"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="55"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_value` is defined as `28dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_value&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="129"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="56"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_unit` is defined as `11dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_unit&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="140"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="57"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_hint` is defined as `10.5dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_hint&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="156"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="58"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_label` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_label&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="198"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="55"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_value` is defined as `28dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_value&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="218"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="56"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_unit` is defined as `11dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_unit&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="229"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="57"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_hint` is defined as `10.5dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_hint&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="245"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="58"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_side_title` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                android:textSize=&quot;@dimen/widget_side_title&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="277"
+            column="17"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="39"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_label` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_label&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="311"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="55"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_value` is defined as `28dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_value&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="331"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="56"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_unit` is defined as `11dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_unit&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="342"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="57"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_hint` is defined as `10.5dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_hint&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="358"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="58"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_label` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_label&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="400"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="55"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_value` is defined as `28dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_value&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="420"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="56"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_unit` is defined as `11dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_unit&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="431"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="57"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_hint` is defined as `10.5dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_hint&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="447"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="58"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_week` is defined as `10.5dp` in `values/dimens.xml`"
+        errorLine1="        android:textSize=&quot;@dimen/widget_week&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="21"
+            column="9"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="37"
+            column="31"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_side_title` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                android:textSize=&quot;@dimen/widget_side_title&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="45"
+            column="17"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="39"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_label` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_label&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="74"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="55"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_value` is defined as `28dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_value&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="92"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="56"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_unit` is defined as `11dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_unit&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="102"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="57"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_hint` is defined as `10.5dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_hint&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="115"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="58"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_label` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_label&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="151"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="55"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_value` is defined as `28dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_value&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="169"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="56"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_unit` is defined as `11dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_unit&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="179"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="57"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_hint` is defined as `10.5dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_hint&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="192"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="58"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_side_title` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                android:textSize=&quot;@dimen/widget_side_title&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="220"
+            column="17"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="39"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_label` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_label&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="249"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="55"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_value` is defined as `28dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_value&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="267"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="56"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_unit` is defined as `11dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_unit&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="277"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="57"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_hint` is defined as `10.5dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_hint&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="290"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="58"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_label` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_label&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="326"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="55"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_value` is defined as `28dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_value&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="344"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="56"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_unit` is defined as `11dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_unit&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="354"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="57"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_block_hint` is defined as `10.5dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_block_hint&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="367"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="58"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_sub` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="        android:textSize=&quot;@dimen/widget_row_sub&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_loading.xml"
+            line="26"
+            column="9"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="42"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_col_header` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                android:textSize=&quot;@dimen/widget_col_header&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class.xml"
+            line="67"
+            column="17"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="38"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_bubble_text` is defined as `13dp` in `values/dimens.xml`"
+        errorLine1="                android:textSize=&quot;@dimen/widget_bubble_text&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class.xml"
+            line="80"
+            column="17"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="51"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_name_lg` is defined as `17dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_name_lg&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class.xml"
+            line="123"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="47"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_time_lg` is defined as `12.5dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_time_lg&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class.xml"
+            line="135"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="48"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_time_lg` is defined as `12.5dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_time_lg&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class.xml"
+            line="147"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="48"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_status_title` is defined as `15dp` in `values/dimens.xml`"
+        errorLine1="                    android:textSize=&quot;@dimen/widget_status_title&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class.xml"
+            line="169"
+            column="21"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="43"
+            column="39"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_status_msg` is defined as `11dp` in `values/dimens.xml`"
+        errorLine1="                    android:textSize=&quot;@dimen/widget_status_msg&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class.xml"
+            line="180"
+            column="21"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="44"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_preview_line` is defined as `11.5dp` in `values/dimens.xml`"
+        errorLine1="            android:textSize=&quot;@dimen/widget_preview_line&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class.xml"
+            line="195"
+            column="13"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="49"
+            column="39"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_status_title` is defined as `15dp` in `values/dimens.xml`"
+        errorLine1="            android:textSize=&quot;@dimen/widget_status_title&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class.xml"
+            line="218"
+            column="13"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="43"
+            column="39"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_status_msg` is defined as `11dp` in `values/dimens.xml`"
+        errorLine1="            android:textSize=&quot;@dimen/widget_status_msg&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class.xml"
+            line="230"
+            column="13"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="44"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_col_header` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="            android:textSize=&quot;@dimen/widget_col_header&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class_preview.xml"
+            line="47"
+            column="13"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="38"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_bubble_text` is defined as `13dp` in `values/dimens.xml`"
+        errorLine1="            android:textSize=&quot;@dimen/widget_bubble_text&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class_preview.xml"
+            line="58"
+            column="13"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="51"
+            column="38"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_name_lg` is defined as `17dp` in `values/dimens.xml`"
+        errorLine1="                android:textSize=&quot;@dimen/widget_name_lg&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class_preview.xml"
+            line="93"
+            column="17"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="47"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_time_lg` is defined as `12.5dp` in `values/dimens.xml`"
+        errorLine1="                android:textSize=&quot;@dimen/widget_time_lg&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class_preview.xml"
+            line="104"
+            column="17"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="48"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_time_lg` is defined as `12.5dp` in `values/dimens.xml`"
+        errorLine1="                android:textSize=&quot;@dimen/widget_time_lg&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class_preview.xml"
+            line="114"
+            column="17"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="48"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_preview_line` is defined as `11.5dp` in `values/dimens.xml`"
+        errorLine1="        android:textSize=&quot;@dimen/widget_preview_line&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class_preview.xml"
+            line="126"
+            column="9"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="49"
+            column="39"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_week` is defined as `10.5dp` in `values/dimens.xml`"
+        errorLine1="            android:textSize=&quot;@dimen/widget_week&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes.xml"
+            line="54"
+            column="13"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="37"
+            column="31"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_col_header` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_col_header&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes.xml"
+            line="88"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="38"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_footer` is defined as `9.5dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_footer&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes.xml"
+            line="99"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="40"
+            column="33"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_col_header` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_col_header&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes.xml"
+            line="123"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="38"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_col_header` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_col_header&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes.xml"
+            line="162"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="38"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_footer` is defined as `9.5dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_footer&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes.xml"
+            line="173"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="40"
+            column="33"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_col_header` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                        android:textSize=&quot;@dimen/widget_col_header&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes.xml"
+            line="197"
+            column="25"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="38"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;18dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes.xml"
+            line="222"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;13dp&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes.xml"
+            line="233"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_week` is defined as `10.5dp` in `values/dimens.xml`"
+        errorLine1="        android:textSize=&quot;@dimen/widget_week&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="21"
+            column="9"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="37"
+            column="31"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_col_header` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                    android:textSize=&quot;@dimen/widget_col_header&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="52"
+            column="21"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="38"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_footer` is defined as `9.5dp` in `values/dimens.xml`"
+        errorLine1="                    android:textSize=&quot;@dimen/widget_footer&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="61"
+            column="21"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="40"
+            column="33"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_name` is defined as `13dp` in `values/dimens.xml`"
+        errorLine1="                            android:textSize=&quot;@dimen/widget_row_name&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="98"
+            column="29"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="41"
+            column="35"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_sub` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                                android:textSize=&quot;@dimen/widget_row_sub&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="116"
+            column="33"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="42"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_sub` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                                android:textSize=&quot;@dimen/widget_row_sub&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="125"
+            column="33"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="42"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_name` is defined as `13dp` in `values/dimens.xml`"
+        errorLine1="                            android:textSize=&quot;@dimen/widget_row_name&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="163"
+            column="29"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="41"
+            column="35"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_sub` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                                android:textSize=&quot;@dimen/widget_row_sub&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="181"
+            column="33"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="42"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_sub` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                                android:textSize=&quot;@dimen/widget_row_sub&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="190"
+            column="33"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="42"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_col_header` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                    android:textSize=&quot;@dimen/widget_col_header&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="227"
+            column="21"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="38"
+            column="37"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_footer` is defined as `9.5dp` in `values/dimens.xml`"
+        errorLine1="                    android:textSize=&quot;@dimen/widget_footer&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="236"
+            column="21"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="40"
+            column="33"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_name` is defined as `13dp` in `values/dimens.xml`"
+        errorLine1="                            android:textSize=&quot;@dimen/widget_row_name&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="273"
+            column="29"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="41"
+            column="35"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_sub` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                                android:textSize=&quot;@dimen/widget_row_sub&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="291"
+            column="33"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="42"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_sub` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                                android:textSize=&quot;@dimen/widget_row_sub&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="300"
+            column="33"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="42"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_name` is defined as `13dp` in `values/dimens.xml`"
+        errorLine1="                            android:textSize=&quot;@dimen/widget_row_name&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="338"
+            column="29"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="41"
+            column="35"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_sub` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                                android:textSize=&quot;@dimen/widget_row_sub&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="356"
+            column="33"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="42"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes (`@dimen/widget_row_sub` is defined as `12dp` in `values/dimens.xml`"
+        errorLine1="                                android:textSize=&quot;@dimen/widget_row_sub&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="365"
+            column="33"/>
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="42"
+            column="34"
+            message="This dp dimension is used as a text size"/>
+    </issue>
+
+    <issue
+        id="HardwareIds"
+        message="Using `getString` to get device identifiers is not recommended"
+        errorLine1="            android.provider.Settings.Secure.getString("
+        errorLine2="            ^">
+        <location
+            file="src/main/java/com/huelpocket/app/core/AppGraph.kt"
+            line="53"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SetJavaScriptEnabled"
+        message="Using `setJavaScriptEnabled` can introduce XSS vulnerabilities into your application, review carefully"
+        errorLine1="            settings.javaScriptEnabled = true"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/web/EmbeddedWebViewPool.kt"
+            line="40"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="This folder configuration (`v26`) is unnecessary; `minSdkVersion` is 31. Merge all the resources in this folder into `mipmap-anydpi`.">
+        <location
+            file="src/main/res/mipmap-anydpi-v26"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        message="Prefer `mutableFloatStateOf` instead of `mutableStateOf`"
+        errorLine1="    var scale by remember { mutableStateOf(1f) }"
+        errorLine2="                            ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/schedule/BackgroundCropScreen.kt"
+            line="120"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        errorLine1="    var daysBack by remember { mutableStateOf(0) }"
+        errorLine2="                               ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/focus/FocusScreen.kt"
+            line="764"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        errorLine1="            var seatRestartKey by remember { mutableStateOf(0) }"
+        errorLine2="                                             ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/library/LibraryScreen.kt"
+            line="120"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        message="Prefer `mutableLongStateOf` instead of `mutableStateOf`"
+        errorLine1="    var nowTick by remember { mutableStateOf(System.currentTimeMillis()) }"
+        errorLine2="                              ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/life/LifeScreen.kt"
+            line="150"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        errorLine1="    private var routeToken by mutableStateOf(0)"
+        errorLine2="                              ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/MainActivity.kt"
+            line="33"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        errorLine1="    var countdown by remember { mutableStateOf(0) }"
+        errorLine2="                                ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/life/PangguaiMine.kt"
+            line="298"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        errorLine1="    var weekday by remember(initial) { mutableStateOf(initial?.weekday ?: 1) }"
+        errorLine2="                                       ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/schedule/PlanEditor.kt"
+            line="86"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        errorLine1="    var startUnit by remember(initial) { mutableStateOf(initial?.startUnit ?: 1) }"
+        errorLine2="                                         ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/schedule/PlanEditor.kt"
+            line="87"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        errorLine1="    var endUnit by remember(initial) { mutableStateOf(initial?.endUnit ?: 2) }"
+        errorLine2="                                       ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/schedule/PlanEditor.kt"
+            line="88"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="            android:layout_weight=&quot;1&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="63"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="                android:layout_weight=&quot;1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="83"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="            android:layout_weight=&quot;1&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="34"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="                android:layout_weight=&quot;1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="51"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="            android:layout_weight=&quot;1&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class_preview.xml"
+            line="83"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="                android:layout_weight=&quot;1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes.xml"
+            line="68"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="                    android:layout_weight=&quot;1&quot;>"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes.xml"
+            line="106"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="                android:layout_weight=&quot;1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="68"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="                    android:layout_weight=&quot;1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="74"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="                        android:layout_weight=&quot;1&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="88"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="                android:layout_weight=&quot;1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="243"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="                    android:layout_weight=&quot;1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="249"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="                        android:layout_weight=&quot;1&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_today_classes_preview.xml"
+            line="263"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/widget_divider` with a theme that also paints a background (inferred theme is `@style/Theme.HUELPocket`)"
+        errorLine1="    android:background=&quot;@color/widget_divider&quot; />"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_row_divider.xml"
+            line="13"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.widget_error` appears to be unused"
+        errorLine1="    &lt;color name=&quot;widget_error&quot;>#B3261E&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="27"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.widget_corner_inner` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;widget_corner_inner&quot;>@android:dimen/system_app_widget_inner_radius&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="27"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.widget_side_title` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;widget_side_title&quot;>12dp&lt;/dimen>    &lt;!-- 左右分栏标题（宿舍电量 / 校园卡） -->"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="39"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.widget_block_label` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;widget_block_label&quot;>12dp&lt;/dimen>   &lt;!-- 块名「照明」 -->"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="55"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.widget_block_value` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;widget_block_value&quot;>28dp&lt;/dimen>   &lt;!-- 块里的数字（真实画布够大，才敢用 28dp） -->"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="56"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.widget_block_unit` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;widget_block_unit&quot;>11dp&lt;/dimen>    &lt;!-- 「度」「元」 -->"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="57"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.widget_block_hint` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;widget_block_hint&quot;>10.5dp&lt;/dimen>  &lt;!-- 「可用约 29 天」 -->"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="58"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.widget_bar_h_sm` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;widget_bar_h_sm&quot;>16dp&lt;/dimen>  &lt;!-- 数据块：贴着块名 -->"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="63"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.xml.energy_card_widget_info` appears to be unused"
+        errorLine1="&lt;appwidget-provider xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/xml/energy_card_widget_info.xml"
+            line="26"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_energy_card` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_energy_card&quot;>电量与校园卡&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="12"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_energy_card_desc` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_energy_card_desc&quot;>左边宿舍照明/空调余额与可用天数，右边校园卡余额与本周消费&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="13"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_balance_light` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_balance_light&quot;>照明&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="17"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_balance_ac` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_balance_ac&quot;>空调&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="18"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_balance_card` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_balance_card&quot;>校园卡&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="19"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_balance_balance` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_balance_balance&quot;>余额&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="20"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_balance_week` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_balance_week&quot;>本周&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="21"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_unit_kwh` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_unit_kwh&quot;>度&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_unit_yuan` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_unit_yuan&quot;>元&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_preview_weekday` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_preview_weekday&quot;>周二&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_preview_balance_header` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_preview_balance_header&quot;>宿舍电量 · 柳园20号楼101&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="55"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_preview_balance_update` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_preview_balance_update&quot;>22:30 更新&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="56"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_preview_balance_light` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_preview_balance_light&quot;>152.82&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="57"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_preview_balance_ac` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_preview_balance_ac&quot;>80.21&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="58"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_preview_balance_card` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_preview_balance_card&quot;>36.50&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="59"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_preview_balance_week` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_preview_balance_week&quot;>87.60&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="60"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_preview_days_left` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_preview_days_left&quot;>可用约 29 天&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="61"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_preview_days_left_ac` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_preview_days_left_ac&quot;>可用约 21 天&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="62"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_preview_balance_today` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_preview_balance_today&quot;>今日 3.20&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="63"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.widget_preview_balance_week_count` appears to be unused"
+        errorLine1="    &lt;string name=&quot;widget_preview_balance_week_count&quot;>5 笔&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="64"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.widget_energy_card` appears to be unused"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="31"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.widget_energy_card_preview` appears to be unused"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="7"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.widget_preview_energy_card` appears to be unused">
+        <location
+            file="src/main/res/drawable/widget_preview_energy_card.png"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        message="This `FrameLayout` view is unnecessary (no children, no `background`, no `id`, no `style`)"
+        errorLine1="                    &lt;FrameLayout"
+        errorLine2="                     ~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="142"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        message="This `FrameLayout` view is unnecessary (no children, no `background`, no `id`, no `style`)"
+        errorLine1="                    &lt;FrameLayout"
+        errorLine2="                     ~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="231"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        message="This `FrameLayout` view is unnecessary (no children, no `background`, no `id`, no `style`)"
+        errorLine1="                    &lt;FrameLayout"
+        errorLine2="                     ~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="344"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        message="This `FrameLayout` view is unnecessary (no children, no `background`, no `id`, no `style`)"
+        errorLine1="                    &lt;FrameLayout"
+        errorLine2="                     ~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card.xml"
+            line="433"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        message="This `FrameLayout` view is unnecessary (no children, no `background`, no `id`, no `style`)"
+        errorLine1="                    &lt;FrameLayout"
+        errorLine2="                     ~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="104"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        message="This `FrameLayout` view is unnecessary (no children, no `background`, no `id`, no `style`)"
+        errorLine1="                    &lt;FrameLayout"
+        errorLine2="                     ~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="181"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        message="This `FrameLayout` view is unnecessary (no children, no `background`, no `id`, no `style`)"
+        errorLine1="                    &lt;FrameLayout"
+        errorLine2="                     ~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="279"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        message="This `FrameLayout` view is unnecessary (no children, no `background`, no `id`, no `style`)"
+        errorLine1="                    &lt;FrameLayout"
+        errorLine2="                     ~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_energy_card_preview.xml"
+            line="356"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="TypographyDashes"
+        message="Replace &quot;-&quot; with an &quot;en dash&quot; character (–, &amp;#8211;) ?"
+        errorLine1="    &lt;string name=&quot;widget_preview_range&quot;>10:00-11:35&lt;/string>"
+        errorLine2="                                        ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="47"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="TypographyDashes"
+        message="Replace &quot;-&quot; with an &quot;en dash&quot; character (–, &amp;#8211;) ?"
+        errorLine1="    &lt;string name=&quot;widget_preview_range2&quot;>14:00-15:35&lt;/string>"
+        errorLine2="                                         ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="48"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="TypographyDashes"
+        message="Replace &quot;-&quot; with an &quot;en dash&quot; character (–, &amp;#8211;) ?"
+        errorLine1="    &lt;string name=&quot;widget_preview_range3&quot;>08:00-09:40&lt;/string>"
+        errorLine2="                                         ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="49"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="TypographyDashes"
+        message="Replace &quot;-&quot; with an &quot;en dash&quot; character (–, &amp;#8211;) ?"
+        errorLine1="    &lt;string name=&quot;widget_preview_range4&quot;>10:10-11:50&lt;/string>"
+        errorLine2="                                         ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="50"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="TypographyDashes"
+        message="Replace &quot;-&quot; with an &quot;en dash&quot; character (–, &amp;#8211;) ?"
+        errorLine1="    &lt;string name=&quot;widget_preview_next_range&quot;>10:00-11:35&lt;/string>"
+        errorLine2="                                             ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="53"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/widget_preview_energy_card.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/widget_preview_energy_card.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/widget_preview_next_class.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/widget_preview_next_class.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/widget_preview_today_classes.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/widget_preview_today_classes.png"/>
+    </issue>
+
+    <issue
+        id="ConstantLocale"
+        message="Assigning `Locale.getDefault()` to a final static field is suspicious; this code will not work correctly if the user changes locale while the app is running"
+        errorLine1="private val FULL_FMT = SimpleDateFormat(&quot;yyyy-MM-dd HH:mm&quot;, Locale.getDefault())"
+        errorLine2="                                                            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/diag/DiagnosticsScreen.kt"
+            line="40"
+            column="61"/>
+    </issue>
+
+    <issue
+        id="ConstantLocale"
+        message="Assigning `Locale.getDefault()` to a final static field is suspicious; this code will not work correctly if the user changes locale while the app is running"
+        errorLine1="    private val HM = SimpleDateFormat(&quot;HH:mm&quot;, Locale.getDefault())"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/components/RelativeTime.kt"
+            line="15"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="ConstantLocale"
+        message="Assigning `Locale.getDefault()` to a final static field is suspicious; this code will not work correctly if the user changes locale while the app is running"
+        errorLine1="    private val FULL = SimpleDateFormat(&quot;M月d日 HH:mm&quot;, Locale.getDefault())"
+        errorLine2="                                                      ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/components/RelativeTime.kt"
+            line="16"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="ConstantLocale"
+        message="Assigning `Locale.getDefault()` to a final static field is suspicious; this code will not work correctly if the user changes locale while the app is running"
+        errorLine1="private val DATE_FMT = DateTimeFormatter.ofPattern(&quot;M/d&quot;, Locale.getDefault())"
+        errorLine2="                                                          ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/huelpocket/app/ui/schedule/ScheduleScreen.kt"
+            line="65"
+            column="59"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;3&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;3&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class.xml"
+            line="78"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;3&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;3&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/widget_next_class_preview.xml"
+            line="56"
+            column="13"/>
+    </issue>
+
+</issues>
